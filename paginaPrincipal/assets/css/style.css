@@ -1,0 +1,167 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background-color: #D5CEA3;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  padding-top: 5%;
+  background: #4e392f;
+  overflow-y: auto;
+  
+}
+
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #D5CEA3;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+}
+
+.container,
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #E5E5CB;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #1A120B;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}

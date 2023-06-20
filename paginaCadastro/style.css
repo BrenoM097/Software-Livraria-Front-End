@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.formulario {
+    margin: 15%;
+    border: 5px;
+    border: groove;
+    border-color: #27374D;
+    box-shadow: 10px 8px #526D82;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cor-botao {
+    background-color: #27374D;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    width: 90px;
+    text-align: center;
+}
+
+.cor-botao:hover {
+    background-color: #16202e;
+    transform: scale(1.02);
+}
